@@ -11,7 +11,7 @@ def face_and_eye_detector(image):
 
 	faces = face_classifier.detectMultiScale(gray, 1.2, 5)
 	for (x, y, w, h) in faces:
-		cv2.rectangle(image, (x, y), (x+w, y+h), (255,0,0), 3)
+		cv2.rectangle(image, (x, y), (x+w, y+h), (255,0,0), 4)
 
 		area_gray = gray[y:y+h, x:x+w]
 		area_original = image[y:y+h, x:x+w]
